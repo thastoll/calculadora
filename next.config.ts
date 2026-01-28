@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next/dist/server/config";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  compiler: {
+    styledComponents: true,
+  },
+
+  devIndicators: false,
 };
 
 export default nextConfig;
